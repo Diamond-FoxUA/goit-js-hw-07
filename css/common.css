@@ -26,10 +26,25 @@ h2 {
   font-weight: 600;
 }
 
+/* p a {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2e2f42;
+} */
+
+#categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 24px;
+  margin: 48px 16px 16px 16px;
+}
+
 .item {
   background-color: #f6f6fe;
   border-radius: 8px;
-  width: 392px;
+  flex-basis: calc((100% - (24px * 2)) / 3);
   padding: 16px;
   margin-bottom: 24px;
 }
@@ -46,13 +61,13 @@ h2 {
 
 .gallery {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   flex-wrap: wrap;
   margin: 48px 16px 16px 16px;
 }
 
 .gallery li {
-  flex-basis: calc((100% - (20px * 2)) / 3);
+  flex-basis: calc((100% - (24px * 2)) / 3);
 }
 
 .gallery img {
